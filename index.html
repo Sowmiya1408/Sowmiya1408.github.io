@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowmiya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Force all sections to be visible */
+        .about-image, .about-text, .timeline-item, 
+        .skill-category, .skill-item, .project-card, 
+        .contact-info, .contact-form {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+    </style>
+</head>
+<body class="all-visible">
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Sowmiya</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="intro-text">Hello, I'm</p>
+                <h1 class="name">Sowmiya</h1>
+                <h2 class="title">Software Developer</h2>
+                <div class="cta-buttons">
+                    <a href="#about" class="btn primary-btn">Get To Know More</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <!-- Professional headshot from Unsplash -->
+                     <!-- <img src="assets/profile.jpg" alt="Sowmiya's Profile Picture"> -->
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sowmiya's Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <!-- Professional image from Unsplash -->
+                   <!-- <img src="assets/about.jpg" alt="About Sowmiya"> -->
+                <img src="https://images.unsplash.com/photo-1571727153934-b9e0a8a8b1b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="About Sowmiya">
+            </div>
+            <div class="about-text">
+                <div class="about-cards">
+                    <div class="about-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Experience</h3>
+                        <p>3+ Years</p>
+                        <p>Software Development</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Master's Degree</p>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+                <p class="about-description">
+                    I am a passionate Software Developer with expertise in full-stack development, 
+                    machine learning, and cloud technologies. My experience spans across building 
+                    scalable applications, designing efficient APIs, and implementing data-driven 
+                    solutions.
+                </p>
+                <p class="about-description">
+                    With a strong foundation in Java, Python, React, and SQL, I've successfully 
+                    delivered multiple projects that focus on user experience and performance. 
+                    I'm dedicated to continuous learning and staying updated with the latest 
+                    technologies in the software development landscape.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">My Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="job-title">Senior Software Developer</h3>
+                    <h4 class="company">Tech Innovations Inc.</h4>
+                    <p class="duration">Jan 2022 - Present | San Francisco, CA</p>
+                    <ul class="responsibilities">
+                        <li>Led the development of microservices architecture using Spring Boot and Docker, improving system scalability by 40%.</li>
+                        <li>Implemented CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment time by 60%.</li>
+                        <li>Collaborated with cross-functional teams to design and develop RESTful APIs for mobile and web applications.</li>
+                        <li>Mentored junior developers and conducted code reviews to ensure code quality and best practices.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="job-title">Software Engineer</h3>
+                    <h4 class="company">Global Solutions Ltd.</h4>
+                    <p class="duration">Jun 2020 - Dec 2021 | Boston, MA</p>
+                    <ul class="responsibilities">
+                        <li>Developed and maintained front-end applications using React.js and Redux, improving user experience and performance.</li>
+                        <li>Built and optimized database queries using SQL and MongoDB, resulting in 30% faster data retrieval.</li>
+                        <li>Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives.</li>
+                        <li>Integrated third-party APIs and services to enhance application functionality and user experience.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="job-title">Software Development Intern</h3>
+                    <h4 class="company">Tech Startup</h4>
+                    <p class="duration">Jan 2020 - May 2020 | Remote</p>
+                    <ul class="responsibilities">
+                        <li>Assisted in developing web applications using HTML, CSS, JavaScript, and React.js.</li>
+                        <li>Collaborated with the backend team to integrate APIs and improve data flow.</li>
+                        <li>Participated in code reviews and implemented feedback to improve code quality.</li>
+                        <li>Contributed to the documentation of code and processes for future reference.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-row">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <p>React</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <p>Angular</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>SQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category tools-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-grid tools-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <p>Docker</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i>
+                        <p>AWS</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cloud"></i>
+                        <p>Azure</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cogs"></i>
+                        <p>CI/CD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- E-commerce project image from Unsplash -->
+                    <!-- <img src="assets/project1.jpg" alt="Project 1"> -->
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="E-Commerce Platform">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- AI/ML project image from Unsplash -->
+                     <!-- <img src="assets/project2.jpg" alt="Project 2"> -->
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="AI-Powered Health Tracker">
+                </div>
+                <div class="project-info">
+                    <h3>AI-Powered Health Tracker</h3>
+                    <p>A machine learning application that tracks and analyzes health metrics. Uses Python, TensorFlow, and Flask for the backend, with a React frontend for data visualization.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Flask</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- IoT project image from Unsplash -->
+                     <!-- <img src="assets/project3.jpg" alt="Project 3"> -->
+                    <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smart Home Automation System">
+                </div>
+                <div class="project-info">
+                    <h3>Smart Home Automation System</h3>
+                    <p>An IoT-based home automation system that allows users to control home appliances remotely. Built with Arduino, Raspberry Pi, and a mobile app using React Native.</p>
+                    <div class="project-tech">
+                        <span>IoT</span>
+                        <span>Arduino</span>
+                        <span>Raspberry Pi</span>
+                        <span>React Native</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-items-grid">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>sowmiya@example.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-container">
+                    <h3 class="social-title">Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Sowmiya</h2>
+                <p>Software Developer</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sowmiya. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
