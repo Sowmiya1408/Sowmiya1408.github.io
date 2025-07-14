@@ -19,7 +19,9 @@
         .project-card,
         .contact-info,
         .contact-form,
-        .skill-progress-item {
+        .skill-progress-item,
+        .education-item,
+        .cert-learning-item {
             opacity: 1 !important;
             transform: none !important;
             transition: none !important;
@@ -43,8 +45,9 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#data-bi">Data/BI</a></li>
@@ -139,96 +142,70 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <h2 class="section-title">Work Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <!-- <h3 class="job-title">Senior DevOps Engineer</h3>
-                    <h4 class="company">Cloud Innovations Inc.</h4>
-                    <p class="duration">Jan 2022 - Present | San Francisco, CA</p> -->
-                    <ul class="responsibilities">
-                        <li>Managed and secured Linux server infrastructure for critical biometric authentication
-                            workloads, ensuring >99.9% uptime through proactive monitoring and access control.</li>
-                    </ul>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-main-info">
+                        <h3 class="job-title">IT Infrastructure & Data Operations</h3>
+                        <h4 class="company">India Post – Aadhaar Enrollment Services</h4>
+                        <p class="duration">Data Center Lead and Operations Supervisor | Feb 2020 – Apr 2023</p>
+                    </div>
+                    <div class="experience-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <!-- <h3 class="job-title">DevOps Engineer</h3>
-                    <h4 class="company">Global Cloud Solutions Ltd.</h4>
-                    <p class="duration">Jun 2020 - Dec 2021 | Boston, MA</p> -->
-                    <ul class="responsibilities">
-                        <li>Automated infrastructure tasks and data pipelines with Bash scripting, reducing manual
-                            interventions by 20% and streamlining cloud data synchronization.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <!-- <h3 class="job-title">Cloud Operations Intern</h3>
-                    <h4 class="company">Tech Startup</h4>
-                    <p class="duration">Jan 2020 - May 2020 | Remote</p> -->
-                    <ul class="responsibilities">
-                        <li>ALeveraged system health tools (journalctl, dmesg) alongside custom audit scripts to enhance
-                            incident detection and cut resolution times by 40%.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <ul class="responsibilities">
-                        <li>Created operational compliance dashboards in Excel, driving infrastructure audit readiness
-                            and reporting efficiency.</li>
-                    </ul>
-                </div>
-            </div>
-             <div class="timeline-item">
-                <div class="timeline-content">
-                    <ul class="responsibilities">
-                        <li>Partnered with distributed IT teams to roll out updates, maintain high system availability, and support secure identity management across cloud-connected sites.</li>
-                    </ul>
+                <div class="experience-content">
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="achievement-text">
+                                <h5>Infrastructure Security</h5>
+                                <p>Managed and secured Linux server infrastructure for critical biometric authentication workloads, ensuring >99.9% uptime through proactive monitoring and access control.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="achievement-text">
+                                <h5>Process Automation</h5>
+                                <p>Automated infrastructure tasks and data pipelines with Bash scripting, reducing manual interventions by 20% and streamlining cloud data synchronization.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="achievement-text">
+                                <h5>System Monitoring</h5>
+                                <p>Leveraged system health tools (journalctl, dmesg) alongside custom audit scripts to enhance incident detection and cut resolution times by 40%.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="achievement-text">
+                                <h5>Compliance Dashboards</h5>
+                                <p>Created operational compliance dashboards in Excel, driving infrastructure audit readiness and reporting efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="achievement-text">
+                                <h5>Team Collaboration</h5>
+                                <p>Partnered with distributed IT teams to roll out updates, maintain high system availability, and support secure identity management across cloud-connected sites.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Certifications Section -->
-    <!-- <section id="certifications" class="certifications">
-        <h2 class="section-title">AWS Certifications</h2>
-        <div class="certifications-container">
-            <div class="certifications-grid">
-                <div class="certification-item">
-                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Professional_badge.3e88a38f0c4d27db0c298f788581a494d27a7a2d.png"
-                        alt="AWS Solutions Architect Professional">
-                    <h4>AWS Certified Solutions Architect Professional</h4>
-                </div>
-                <div class="certification-item">
-                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-DevOps-Engineer-Professional_badge.cecb5282c3d3d3837b2c6a5c4e9a96c8b9946125.png"
-                        alt="AWS DevOps Engineer Professional">
-                    <h4>AWS Certified DevOps Engineer Professional</h4>
-                </div>
-                <div class="certification-item">
-                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png"
-                        alt="AWS Solutions Architect Associate">
-                    <h4>AWS Certified Solutions Architect Associate</h4>
-                </div>
-                <div class="certification-item">
-                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
-                        alt="AWS Developer Associate">
-                    <h4>AWS Certified Developer Associate</h4>
-                </div>
-                <div class="certification-item">
-                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-SysOps-Administrator-Associate_badge.c3586b02748654fb588633314dd66a1d6841893f.png"
-                        alt="AWS SysOps Administrator Associate">
-                    <h4>AWS Certified SysOps Administrator Associate</h4>
-                </div>
-                <div class="certification-item">
-                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Security-Specialty_badge.b8fd90ad15cce006d2a64a4679439e64c8730a9b.png"
-                        alt="AWS Security Specialty">
-                    <h4>AWS Certified Security Specialty</h4>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
@@ -369,6 +346,220 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="education-container">
+            <!-- Education Items -->
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Master of Science in Information Systems</h3>
+                        <h4>Cleveland State University</h4>
+                        <p class="education-details">
+                            <span class="gpa">GPA: 3.87</span>
+                            <span class="graduation-date">May 2025</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Engineering in Electronics & Communication</h3>
+                        <h4>Anna University</h4>
+                        <p class="education-details">
+                            <span class="graduation-date">May 2019</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications & Learning -->
+            <div class="certifications-learning">
+                <h3 class="subsection-title">Professional Certifications & Learning</h3>
+                <div class="cert-learning-grid">
+                    <a href="https://www.credly.com/badges/b8617bf4-10c2-4641-8c2e-2e0f10a3bd3e/public_url" target="_blank" class="cert-learning-item">
+                        <div class="cert-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>AWS Certified Solutions Architect – Associate</h4>
+                            <span class="cert-status completed">Certified</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=453D7152FC8254B8B81FB1099844E2B3A57DB396101327C27424629CFE06F099" target="_blank" class="cert-learning-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Oracle Cloud Infrastructure Foundations Associate</h4>
+                            <span class="cert-status completed">Certified</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7C08F57A7F2EDDF67666E05C9B272E3D936A64C885C47821A6C3CD84A503935E" target="_blank" class="cert-learning-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Oracle Cloud Infrastructure AI Foundations Associate</h4>
+                            <span class="cert-status completed">Certified</span>
+                        </div>
+                    </a>
+                    
+                    <div class="cert-learning-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Stanford Machine Learning Specialization</h4>
+                            <span class="cert-status in-progress">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-category">Infrastructure</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Terraform AWS Infrastructure Platform</h3>
+                        <p>Built reusable Terraform modules to provision VPC, EC2, RDS, and ALB on AWS, enforcing least-privilege IAM and automated state management for secure, scalable deployments.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag primary">Terraform</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">IaC</span>
+                            <span class="tech-tag secondary">Security</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <div class="project-category">Kubernetes</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kubernetes Deployment on EKS</h3>
+                        <p>Deployed multi-tier applications on an AWS EKS cluster with managed node groups, secured networking, and LoadBalancer services to enable resilient, cloud-native delivery.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag primary">AWS</span>
+                            <span class="tech-tag">EKS</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag secondary">Networking</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="project-category">DevSecOps</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CI/CD DevSecOps Pipeline</h3>
+                        <p>Created a GitHub Actions pipeline integrating Docker builds, unit tests, linting, SAST scans, and ArgoCD deployments, embedding OWASP compliance and security gates.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag primary">GitHub Actions</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">ArgoCD</span>
+                            <span class="tech-tag secondary">DevSecOps</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-category">MLOps</div>
+                        <div class="featured-badge">Featured</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Diabetes Prediction MLOps Pipeline</h3>
+                        <p>Trained a Random Forest model on health metrics to predict diabetes risk, deployed via FastAPI, containerized with Docker, and orchestrated on Kubernetes for scalable inference.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag primary">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag secondary">MLOps</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Data/BI Section -->
     <section id="data-bi" class="data-bi-section">
@@ -589,13 +780,13 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <h2>Sowmiya</h2>
-                <p>DevOps Engineer</p>
             </div>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
                 <a href="#certifications">Certifications</a>
                 <a href="#projects">Projects</a>
                 <a href="#data-bi">Data/BI</a>
