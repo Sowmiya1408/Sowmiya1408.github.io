@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sowmiya - Portfolio</title>
+    <title>Sowmiya | DevOps Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         /* Force all sections to be visible */
-        .about-image, .about-text, .timeline-item, 
-        .skill-category, .skill-item, .project-card, 
-        .contact-info, .contact-form {
+        .about-image,
+        .about-text,
+        .timeline-item,
+        .skill-category,
+        .skill-item,
+        .project-card,
+        .contact-info,
+        .contact-form,
+        .skill-progress-item {
             opacity: 1 !important;
             transform: none !important;
             transition: none !important;
         }
+
+        /* Ensure progress bars maintain their width */
+        .progress {
+            transition: none !important;
+            animation: none !important;
+        }
     </style>
 </head>
+
 <body class="all-visible">
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <h1>Sowmiya</h1>
+            <h1>SOWMIYA MURUGAN</h1>
         </div>
         <nav>
             <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#data-bi">Data/BI</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -38,15 +57,17 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <p class="intro-text">Hello, I'm</p>
                 <h1 class="name">Sowmiya</h1>
-                <h2 class="title">Software Developer</h2>
+                <h2 class="title">Cloud & DevOps Engineer | AWS Certified Solutions Architect.</h2>
+                <p class="hero-subtitle">Designing secure, automated infrastructure & exploring AI/ML + MLOps solutions
+                </p>
                 <div class="cta-buttons">
-                    <a href="#about" class="btn primary-btn">Get To Know More</a>
-                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View My Work</a>
                 </div>
                 <div class="social-icons">
                     <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -57,13 +78,11 @@
             <div class="hero-image">
                 <div class="image-container">
                     <!-- Professional headshot from Unsplash -->
-                     <!-- <img src="assets/profile.jpg" alt="Sowmiya's Profile Picture"> -->
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sowmiya's Profile Picture">
+                    <!-- <img src="assets/profile.jpg" alt="Sowmiya's Profile Picture"> -->
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Sowmiya's Profile Picture">
                 </div>
             </div>
-        </div>
-        <div class="scroll-down">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
@@ -71,37 +90,47 @@
     <section id="about" class="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-            <div class="about-image">
-                <!-- Professional image from Unsplash -->
-                   <!-- <img src="assets/about.jpg" alt="About Sowmiya"> -->
-                <img src="https://images.unsplash.com/photo-1571727153934-b9e0a8a8b1b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="About Sowmiya">
-            </div>
             <div class="about-text">
                 <div class="about-cards">
                     <div class="about-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Experience</h3>
-                        <p>3+ Years</p>
-                        <p>Software Development</p>
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps Engineering</h3>
+                        <p>AWS Certified</p>
+                        <p>Automating secure, scalable infrastructures across multi-cloud environments with Terraform,
+                            Kubernetes, and CI/CD pipelines.</p>
                     </div>
                     <div class="about-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>Education</h3>
-                        <p>Master's Degree</p>
-                        <p>Computer Science</p>
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Infrastructure as Code</h3>
+                        <p>Designing repeatable, compliant infrastructure with Terraform & CloudFormation to accelerate
+                            deployments and enforce security best practices</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data & Business Analytics</h3>
+                        <p>Building Power BI & Excel dashboards to transform complex data into clear insights,
+                            supporting strategic decisions and audit readiness.</p>
+                    </div>
+                    <div class="about-card exploring-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>MLOps & AI/ML Pipelines <span class="exploring-badge">Currently Exploring</span></h3>
+                        <p>Bridging machine learning models with production systems using Docker, FastAPI, and
+                            Kubernetes for scalable, cloud-native inference.</p>
                     </div>
                 </div>
                 <p class="about-description">
-                    I am a passionate Software Developer with expertise in full-stack development, 
-                    machine learning, and cloud technologies. My experience spans across building 
-                    scalable applications, designing efficient APIs, and implementing data-driven 
-                    solutions.
+                    Results-driven Cloud & DevOps Engineer with expertise in cloud infrastructure, automation, and data
+                    analysis. Proven record deploying and orchestrating applications, optimizing AWS environments, and
+                    streamlining DevOps workflows.
                 </p>
                 <p class="about-description">
-                    With a strong foundation in Java, Python, React, and SQL, I've successfully 
-                    delivered multiple projects that focus on user experience and performance. 
-                    I'm dedicated to continuous learning and staying updated with the latest 
-                    technologies in the software development landscape.
+                    AWS Certified Solutions Architect, also skilled in developing Power BI and Excel dashboards to
+                    translate data into actionable insights. Currently expanding into AI/ML and MLOps to bridge
+                    data-driven applications with secure, scalable platforms.
+                </p>
+                <p class="about-description">
+                    I thrive at the intersection of infrastructure, automation, and analytics — delivering systems that
+                    empower smarter business outcomes.
                 </p>
             </div>
         </div>
@@ -109,198 +138,392 @@
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <h2 class="section-title">My Experience</h2>
+        <h2 class="section-title">Work Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3 class="job-title">Senior Software Developer</h3>
-                    <h4 class="company">Tech Innovations Inc.</h4>
-                    <p class="duration">Jan 2022 - Present | San Francisco, CA</p>
+                    <!-- <h3 class="job-title">Senior DevOps Engineer</h3>
+                    <h4 class="company">Cloud Innovations Inc.</h4>
+                    <p class="duration">Jan 2022 - Present | San Francisco, CA</p> -->
                     <ul class="responsibilities">
-                        <li>Led the development of microservices architecture using Spring Boot and Docker, improving system scalability by 40%.</li>
-                        <li>Implemented CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment time by 60%.</li>
-                        <li>Collaborated with cross-functional teams to design and develop RESTful APIs for mobile and web applications.</li>
-                        <li>Mentored junior developers and conducted code reviews to ensure code quality and best practices.</li>
+                        <li>Managed and secured Linux server infrastructure for critical biometric authentication
+                            workloads, ensuring >99.9% uptime through proactive monitoring and access control.</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3 class="job-title">Software Engineer</h3>
-                    <h4 class="company">Global Solutions Ltd.</h4>
-                    <p class="duration">Jun 2020 - Dec 2021 | Boston, MA</p>
+                    <!-- <h3 class="job-title">DevOps Engineer</h3>
+                    <h4 class="company">Global Cloud Solutions Ltd.</h4>
+                    <p class="duration">Jun 2020 - Dec 2021 | Boston, MA</p> -->
                     <ul class="responsibilities">
-                        <li>Developed and maintained front-end applications using React.js and Redux, improving user experience and performance.</li>
-                        <li>Built and optimized database queries using SQL and MongoDB, resulting in 30% faster data retrieval.</li>
-                        <li>Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives.</li>
-                        <li>Integrated third-party APIs and services to enhance application functionality and user experience.</li>
+                        <li>Automated infrastructure tasks and data pipelines with Bash scripting, reducing manual
+                            interventions by 20% and streamlining cloud data synchronization.</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3 class="job-title">Software Development Intern</h3>
+                    <!-- <h3 class="job-title">Cloud Operations Intern</h3>
                     <h4 class="company">Tech Startup</h4>
-                    <p class="duration">Jan 2020 - May 2020 | Remote</p>
+                    <p class="duration">Jan 2020 - May 2020 | Remote</p> -->
                     <ul class="responsibilities">
-                        <li>Assisted in developing web applications using HTML, CSS, JavaScript, and React.js.</li>
-                        <li>Collaborated with the backend team to integrate APIs and improve data flow.</li>
-                        <li>Participated in code reviews and implemented feedback to improve code quality.</li>
-                        <li>Contributed to the documentation of code and processes for future reference.</li>
+                        <li>ALeveraged system health tools (journalctl, dmesg) alongside custom audit scripts to enhance
+                            incident detection and cut resolution times by 40%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <ul class="responsibilities">
+                        <li>Created operational compliance dashboards in Excel, driving infrastructure audit readiness
+                            and reporting efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="timeline-item">
+                <div class="timeline-content">
+                    <ul class="responsibilities">
+                        <li>Partnered with distributed IT teams to roll out updates, maintain high system availability, and support secure identity management across cloud-connected sites.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Certifications Section -->
+    <!-- <section id="certifications" class="certifications">
+        <h2 class="section-title">AWS Certifications</h2>
+        <div class="certifications-container">
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Professional_badge.3e88a38f0c4d27db0c298f788581a494d27a7a2d.png"
+                        alt="AWS Solutions Architect Professional">
+                    <h4>AWS Certified Solutions Architect Professional</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-DevOps-Engineer-Professional_badge.cecb5282c3d3d3837b2c6a5c4e9a96c8b9946125.png"
+                        alt="AWS DevOps Engineer Professional">
+                    <h4>AWS Certified DevOps Engineer Professional</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png"
+                        alt="AWS Solutions Architect Associate">
+                    <h4>AWS Certified Solutions Architect Associate</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
+                        alt="AWS Developer Associate">
+                    <h4>AWS Certified Developer Associate</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-SysOps-Administrator-Associate_badge.c3586b02748654fb588633314dd66a1d6841893f.png"
+                        alt="AWS SysOps Administrator Associate">
+                    <h4>AWS Certified SysOps Administrator Associate</h4>
+                </div>
+                <div class="certification-item">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Security-Specialty_badge.b8fd90ad15cce006d2a64a4679439e64c8730a9b.png"
+                        alt="AWS Security Specialty">
+                    <h4>AWS Certified Security Specialty</h4>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <!-- Skills Section -->
-    <section class="skills">
-        <h2 class="section-title">My Skills</h2>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Technical Skills</h2>
         <div class="skills-container">
-            <div class="skills-row">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <p>HTML</p>
+            <div class="skills-grid-compact">
+                <div class="skill-category-compact">
+                    <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">AWS (Amazon Web Services)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <p>CSS</p>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Azure</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <p>JavaScript</p>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">GCP</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <p>React</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-angular"></i>
-                            <p>Angular</p>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Oracle Cloud</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <p>Java</p>
+
+                <div class="skill-category-compact">
+                    <h3><i class="fab fa-docker"></i> Containerization & Orchestration</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <p>Python</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <p>Node.js</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <p>SQL</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <p>MongoDB</p>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Kubernetes, EKS</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="skill-category tools-category">
-                <h3>Tools & Technologies</h3>
-                <div class="skills-grid tools-grid">
-                    <div class="skill-item">
-                        <i class="fab fa-git-alt"></i>
-                        <p>Git</p>
+
+                <div class="skill-category-compact">
+                    <h3><i class="fas fa-code-branch"></i> CI/CD & DevOps Tools</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Jenkins, GitHub Actions, GitLab CI/CD</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">ArgoCD</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="fab fa-docker"></i>
-                        <p>Docker</p>
+                </div>
+
+                <div class="skill-category-compact">
+                    <h3><i class="fas fa-cogs"></i> Infrastructure as Code</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Terraform</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">CloudFormation, Ansible</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="fab fa-aws"></i>
-                        <p>AWS</p>
+                </div>
+
+                <div class="skill-category-compact">
+                    <h3><i class="fas fa-chart-line"></i> Monitoring & Observability</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Prometheus, Grafana</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">AWS CloudWatch</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-cloud"></i>
-                        <p>Azure</p>
+                </div>
+
+                <div class="skill-category-compact">
+                    <h3><i class="fas fa-terminal"></i> Scripting & Automation</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Bash, PowerShell</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-cogs"></i>
-                        <p>CI/CD</p>
+                </div>
+
+                <div class="skill-category-compact">
+                    <h3><i class="fas fa-chart-bar"></i> Data & Visualization</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Excel (Advanced)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item-compact">
+                            <span class="skill-name">SQL for BI</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-compact exploring-category">
+                    <h3><i class="fas fa-brain"></i> MLOps & AI/ML</h3>
+                    <div class="skill-items-compact">
+                        <div class="skill-item-compact">
+                            <span class="skill-name">Python ML (pandas, scikit-learn)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
+                        </div>
+                        <div class="skill-item-compact exploring-item">
+                            <span class="skill-name">MLOps Pipelines (Docker, K8s)</span>
+                            <span class="exploring-badge">Currently Exploring</span>
+                            <div class="skill-bar exploring-bar">
+                                <div class="skill-fill exploring-fill" style="width: 30%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <!-- E-commerce project image from Unsplash -->
-                    <!-- <img src="assets/project1.jpg" alt="Project 1"> -->
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="E-Commerce Platform">
-                </div>
-                <div class="project-info">
-                    <h3>E-Commerce Platform</h3>
-                    <p>A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.</p>
-                    <div class="project-tech">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                        <span>Express</span>
+
+    <!-- Data/BI Section -->
+    <section id="data-bi" class="data-bi-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chart-line"></i>
+                Data & Business Intelligence
+            </h2>
+            <p class="section-subtitle">Transforming complex data into actionable insights through advanced analytics and visualization</p>
+            
+            <div class="data-bi-grid">
+                <div class="data-bi-card featured-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="card-badge">Cost Optimization</div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    <div class="card-content">
+                        <h3>E-Commerce Packaging Optimization</h3>
+                        <p>Identified inefficiencies in packaging trends using Power BI and SQL, uncovering insights that drove a projected <strong>12% cost reduction</strong>. Combined SQL metrics with Excel forecasting to build dashboards guiding sustainable packaging strategies.</p>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">12%</span>
+                                <span class="metric-label">Cost Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">5+</span>
+                                <span class="metric-label">Dashboards</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="tech-stack">
+                            <span class="tech-tag primary">Power BI</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag secondary">Cost Analytics</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="action-btn primary-action">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <!-- AI/ML project image from Unsplash -->
-                     <!-- <img src="assets/project2.jpg" alt="Project 2"> -->
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="AI-Powered Health Tracker">
-                </div>
-                <div class="project-info">
-                    <h3>AI-Powered Health Tracker</h3>
-                    <p>A machine learning application that tracks and analyzes health metrics. Uses Python, TensorFlow, and Flask for the backend, with a React frontend for data visualization.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>TensorFlow</span>
-                        <span>Flask</span>
-                        <span>React</span>
+
+                <div class="data-bi-card">
+                    <div class="card-header">
+                        <div class="card-icon azure">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="card-badge azure">Azure Pipeline</div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    <div class="card-content">
+                        <h3>Olympic Data Analytics Pipeline</h3>
+                        <p>Designed an Azure pipeline with Data Factory, Data Lake, Synapse, and Databricks to ingest, process, and model Olympic datasets. Uncovered performance trends to support strategic decisions.</p>
+                        <div class="pipeline-flow">
+                            <div class="flow-step">Data Factory</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Data Lake</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Synapse</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="tech-stack">
+                            <span class="tech-tag azure">Azure Data Factory</span>
+                            <span class="tech-tag azure">Synapse</span>
+                            <span class="tech-tag">Databricks</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="action-btn primary-action">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <!-- IoT project image from Unsplash -->
-                     <!-- <img src="assets/project3.jpg" alt="Project 3"> -->
-                    <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smart Home Automation System">
-                </div>
-                <div class="project-info">
-                    <h3>Smart Home Automation System</h3>
-                    <p>An IoT-based home automation system that allows users to control home appliances remotely. Built with Arduino, Raspberry Pi, and a mobile app using React Native.</p>
-                    <div class="project-tech">
-                        <span>IoT</span>
-                        <span>Arduino</span>
-                        <span>Raspberry Pi</span>
-                        <span>React Native</span>
+
+                <div class="data-bi-card">
+                    <div class="card-header">
+                        <div class="card-icon tableau">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="card-badge tableau">Tableau Analytics</div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+                    <div class="card-content">
+                        <h3>Coursera Sales Data Analysis</h3>
+                        <p>Built interactive Tableau dashboards analyzing course popularity, enrollment trends, and performance metrics, uncovering insights into student engagement and content quality.</p>
+                        <div class="analytics-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-users"></i>
+                                <span>Student Engagement</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-trending-up"></i>
+                                <span>Enrollment Trends</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="tech-stack">
+                            <span class="tech-tag tableau">Tableau</span>
+                            <span class="tech-tag">Data Visualization</span>
+                            <span class="tech-tag secondary">Analytics</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="action-btn primary-action">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-bi-card ai-card">
+                    <div class="card-header">
+                        <div class="card-icon ai">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="card-badge ai">AI-Powered</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Generative AI for Business Analytics</h3>
+                        <p>Automated business analytics tasks with Python and ChatGPT, developing Excel models for ANOVA, cash flow, entropy, and classification matrices. Showcased AI-driven solutions to enhance decision-making.</p>
+                        <div class="ai-features">
+                            <div class="feature">
+                                <i class="fas fa-calculator"></i>
+                                <span>ANOVA Models</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Cash Flow Analysis</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-brain"></i>
+                                <span>ML Classification</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="tech-stack">
+                            <span class="tech-tag ai">Python</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag ai">ChatGPT</span>
+                            <span class="tech-tag secondary">Financial Analytics</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="action-btn primary-action">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -308,36 +531,53 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-items-grid">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <h3>Email</h3>
-                            <p>sowmiya@example.com</p>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Let's connect and discuss opportunities</p>
+            
+            <div class="contact-wrapper-compact">
+                <div class="contact-info-compact">
+                    <div class="contact-item-compact">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:sowmi98143@gmail.com">sowmi98143@gmail.com</a>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <h3>Phone</h3>
-                            <p>+1 (123) 456-7890</p>
+                    </div>
+                    
+                    <div class="contact-item-compact">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+12163944686">+1 216-394-4686</a>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h3>Location</h3>
-                            <p>San Francisco, CA</p>
+                    </div>
+                    
+                    <div class="contact-item-compact">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Cleveland, OH</span>
                         </div>
                     </div>
                 </div>
-                <div class="social-container">
-                    <h3 class="social-title">Connect With Me</h3>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                
+                <div class="social-compact">
+                    <span class="social-label">Connect:</span>
+                    <div class="social-links-compact">
+                        <a href="#" target="_blank" class="social-btn" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -349,12 +589,16 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <h2>Sowmiya</h2>
-                <p>Software Developer</p>
+                <p>DevOps Engineer</p>
             </div>
             <div class="footer-links">
+                <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#projects">Projects</a>
+                <a href="#data-bi">Data/BI</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-social">
@@ -369,4 +613,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

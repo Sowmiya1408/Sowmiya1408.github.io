@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Elements to animate on scroll
     const skillItems = document.querySelectorAll('.skill-item');
+    const skillProgressItems = document.querySelectorAll('.skill-progress-item');
     const aboutImage = document.querySelector('.about-image');
     const aboutText = document.querySelector('.about-text');
     const timelineItems = document.querySelectorAll('.timeline-item');
@@ -86,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Debug element counts
     console.log('Found elements:', {
         'skillItems': skillItems.length,
+        'skillProgressItems': skillProgressItems.length,
         'aboutImage': aboutImage ? 'yes' : 'no',
         'aboutText': aboutText ? 'yes' : 'no',
         'timelineItems': timelineItems.length,
@@ -132,6 +134,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     item.classList.add('animate');
                 }, 100 + (index % 5) * 100);
             }
+        });
+        
+        // No animation for Skill Progress items
+        skillProgressItems.forEach((item) => {
+            item.classList.add('animate');
         });
         
         // Animate Project cards
@@ -183,6 +190,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 500 + (index % 5) * 100);
         });
         
+        // No animation for Skill Progress items
+        skillProgressItems.forEach((item) => {
+            item.classList.add('animate');
+        });
+        
         // Force animation for visible Project cards
         projectCards.forEach((card, index) => {
             setTimeout(() => {
@@ -191,8 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Force animation for Contact section
-        if (contactInfo) contactInfo.classList.add('animate');
-        if (contactForm) contactForm.classList.add('animate');
+        if (contactWrapper) contactWrapper.classList.add('animate');
     }
     
     // Run animations immediately
