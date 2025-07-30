@@ -2,8 +2,6 @@
 
 A modern, responsive portfolio website showcasing Sowmiya's professional skills, experience, and projects.
 
-![Portfolio Preview](https://images.unsplash.com/photo-1573496359142-b8d87734a5a2)
-
 ## 📋 Table of Contents
 
 - [Overview](#overview)
